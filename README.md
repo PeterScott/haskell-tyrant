@@ -1,7 +1,8 @@
 Pure Haskell interface to Tokyo Tyrant
 ======================================
 
-haskell-tyrant lets you connect to ttserver
+Haskell-tyrant is a client library for Tokyo Tyrant. It uses the
+binary protocol for efficiency.
 
 Example
 -------
