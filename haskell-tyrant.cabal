@@ -1,12 +1,12 @@
 Name:           haskell-tyrant
-Version:        0.3
+Version:        0.4
 Cabal-Version:  >= 1.2
 Build-Type:     Simple
 License:        BSD3
 License-File:   LICENSE
 Author:         Travis Brady <travis.brady@gmail.com>
-Maintainer:     Travis Brady <travis.brady@gmail.com>
-Homepage:       http://github.com/travisbrady/haskell-tyrant/tree/master
+Maintainer:     Peter Scott <peter@greplin.com>
+Homepage:       https://github.com/PeterScott/haskell-tyrant
 Category:       Database
 Synopsis:       Haskell implementation of the Tokyo Tyrant binary protocol
 Description:    
@@ -22,7 +22,6 @@ Library
         Database.TokyoTyrant.Constants
     Build-Depends: 
         base >= 4, base < 5,
-        network,
+        network >= 2.3,
         binary, 
-        bytestring, 
-        network-bytestring >= 0.1.2
+        bytestring
