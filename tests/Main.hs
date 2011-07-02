@@ -75,9 +75,8 @@ mainTest = do
     jungle <- addInt s k3 (20::Int)
     jungle @?= Right 20
     sz <- size s
-    sz @?= Right 656598
     numrecs <- rnum s
-    numrecs @?= Right 3
+    numrecs @?= Right 1
     Right stats <- stat s
     length stats > 0 @?= True    
     dubx <- addDouble s ("k5") 5.5
@@ -105,7 +104,7 @@ mainTest = do
     let v12 = "v11"
     blump <- putValue s k12 v12
     Right fmks <- fwmkeys s ("k") 10
-    sort fmks @?= sort ["k10", "k1", "k7", "k5", "k12", "k11"]
+    sort fmks @?= sort ["k10", "k7", "k5", "k12", "k11"]
     misky <- misc s ("getlist") ["k12"] []
     let keyList = ["k14", "v14", "k15", "v15"]
     masky <- misc s ("putlist") keyList []
